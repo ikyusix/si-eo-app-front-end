@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF8F0"
+    tools:context=".EoScreen.EoScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="UPGRADE TO EO"
+            android:textAlignment="center"
+            android:textSize="30dp" />
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/borderLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <EditText
+                        android:id="@+id/editEoName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Event Organizer Name"
+                        android:inputType="textPersonName"
+                        android:padding="10dp"
+                        android:textColor="#043353" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/editIdentity"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:ems="10"
+                            android:hint="Identity Number"
+                            android:inputType="number"
+                            android:padding="10dp"
+                            android:textColor="#043353 " />
+
+                        <ImageView
+                            android:id="@+id/btnIdentityImg"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="5dp"
+                            android:ems="10"
+                            android:onClick="uploadKTP"
+                            android:text="Upload Identity"
+                            android:textColor="#043353 "
+                            android:visibility="visible" />
+
+                        <Button
+                            android:id="@+id/btnIdentityImgBrowse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:background="#18A4E0"
+                            android:ems="10"
+                            android:onClick="browseKTP"
+                            android:text="+ Identity"
+                            android:textColor="#FAF8F0 "
+                            android:textColorHighlight="@android:color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/editLicense"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Number License"
+                            android:inputType="number"
+                            android:textColor="#043353 " />
+
+                        <ImageView
+                            android:id="@+id/btnLicenseImg"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="5dp"
+                            android:background="@drawable/border"
+                            android:ems="10"
+                            android:onClick="uploadLicense"
+                            android:text="Upload License"
+                            android:textColor="#043353 "
+                            android:visibility="visible" />
+
+                        <Button
+                            android:id="@+id/btnLicenseImgBrowse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:background="#18A4E0"
+                            android:ems="10"
+                            android:onClick="browseLicense"
+                            android:text="+ License"
+                            android:textColor="#FAF8F0 "
+                            android:textColorHighlight="@android:color/white" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/editAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Address EO"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:textColor="#043353 " />
+
+                    <EditText
+                        android:id="@+id/editPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="Phone Number"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textColor="#043353 " />
+
+                    <EditText
+                        android:id="@+id/editWebsite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="Website"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:textColor="#043353 " />
+
+                    <EditText
+                        android:id="@+id/editInstagram"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="Instagram"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:textColor="#043353 " />
+
+                    <EditText
+                        android:id="@+id/editFacebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="Facebook"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:textColor="#043353 " />
+
+                    <EditText
+                        android:id="@+id/editTwitter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="Twitter"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:textColor="#043353 " />
+
+                    <Button
+                        android:id="@+id/btnSubmit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="#18A4E0"
+                        android:ems="10"
+                        android:onClick="SubmitData"
+                        android:padding="10dp"
+                        android:text="SUBMIT"
+                        android:textColor="#FAF8F0"
+                        tools:ignore="OnClick" />
+
+                </LinearLayout>
+            </ScrollView>
+    </LinearLayout>
+</LinearLayout>

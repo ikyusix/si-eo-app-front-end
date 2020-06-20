@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">si-EO_App</string>
+    <string name="error_password">Password must contain at least 8 characters.</string>
+    <string name="logo_content_description">Event Organizer Logo</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="login">Login</string>
+    <string name="signUp">Sign Up</string>
+    <string name="fullName">Full Name</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="birthDate">Birth Date</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="eo">Event Organizer</string>
+    <string name="upgrade">Upgrade Account</string>
+    <string name="terms_conditions">By clicking SignUp you agree all the Terms and Conditions.</string>
+</resources>
